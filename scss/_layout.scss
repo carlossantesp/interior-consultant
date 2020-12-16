@@ -6,19 +6,17 @@ body{
   margin: var(--md);
   justify-content: space-between;
   align-items: center;
-  position: relative;
 }
 .menu{
   position: absolute;
   top: 0;
-  left: 1000px;
+  left: -1000px;
   z-index: 1;
-  height: 100vh;
-  min-width: 100%;
+  min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   background-color: black;
   transition: left 0.25s ease-in-out;
   &__icon{
@@ -27,17 +25,15 @@ body{
   }
   &.active{
     left: 0;
+
   }
   &__link{
     display: block;
     width: 100%;
     text-align: center;
-    padding-top: rem(32px);
+    padding: 1rem;
     &.active, &:hover{
       font-weight: bold;
-    }
-    &:first-child{
-      padding-top: 0;
     }
   }
 }

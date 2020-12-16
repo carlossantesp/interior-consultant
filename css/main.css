@@ -56,16 +56,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 .menu {
   position: absolute;
   top: 0;
-  left: 1000px;
+  left: -1000px;
   z-index: 1;
-  height: 100vh;
-  min-width: 100%;
+  min-height: 100vh;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,9 +75,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: black;
   -webkit-transition: left 0.25s ease-in-out;
   transition: left 0.25s ease-in-out;
@@ -97,15 +93,11 @@ body {
   display: block;
   width: 100%;
   text-align: center;
-  padding-top: 2rem;
+  padding: 1rem;
 }
 
 .menu__link.active, .menu__link:hover {
   font-weight: bold;
-}
-
-.menu__link:first-child {
-  padding-top: 0;
 }
 
 .main {
