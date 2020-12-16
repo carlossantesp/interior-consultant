@@ -21,6 +21,17 @@ a{
     }
   }
 }
+.menu{
+  &.active{
+    background-color: var(--bg);
+  }
+  &__link{
+    font-size: rem(18px);
+    &.active, &:hover{
+      font-weight: var(--font-bold);
+    }
+  }
+}
 .banner{
   &__title{
     font-size: rem(36px);

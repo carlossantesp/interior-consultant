@@ -6,11 +6,39 @@ body{
   margin: var(--md);
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .menu{
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 1000px;
+  z-index: 1;
+  height: 100vh;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  transition: left 0.25s ease-in-out;
   &__icon{
     width: rem(32px);
+    z-index: 9;
+  }
+  &.active{
+    left: 0;
+  }
+  &__link{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: rem(32px);
+    &.active, &:hover{
+      font-weight: bold;
+    }
+    &:first-child{
+      padding-top: 0;
+    }
   }
 }
 .main{
