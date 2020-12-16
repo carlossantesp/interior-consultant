@@ -1,0 +1,56 @@
+@media (min-width:768px) and (orientation: landscape){
+  .main{
+    grid-template-columns: 3fr 4fr;
+    grid-template-areas: "banner img";
+    margin-top: 2rem;
+  }
+  .banner{
+    &__description{
+      padding-right: 8rem;
+    }
+  }
+}
+@media screen and (min-width: 992px){
+  body{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .header, .main{
+    margin: var(--md) var(--xxl)
+  }
+  .main{
+    grid-template-columns: 50% auto;
+    margin-top: 4rem;
+  }
+  .banner{
+    &__description{
+      margin-top: var(--xxl);
+      padding-right: 10rem;
+      line-height: rem(29px);
+    }
+    &__btn{
+      margin-top: var(--xxl);
+    }
+  }
+  .menu{
+    position: initial;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: auto;
+    z-index: initial;
+    width: auto;
+    background-color: transparent;
+    &__icon{
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 1024px){
+  body{
+    max-width: 1400px;
+  }
+  .main{
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 8rem;
+  }
+}

@@ -22,3 +22,13 @@
     }
   }
 }
+@media screen and (min-width: 992px){
+  .banner{
+    &__btn{
+      .icon{
+        margin-left: var(--md);
+        width: rem(24px);
+      }
+    }
+  }
+}

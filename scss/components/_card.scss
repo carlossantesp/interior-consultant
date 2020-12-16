@@ -1,6 +1,6 @@
 .card{
   position: relative;
-  top: rem(-50px);
+  top: rem(-86px);
   width: 18rem;
   left: 50%;
   transform: translateX(-45%);
@@ -30,6 +30,38 @@
       padding-top: var(--md);
       padding-bottom: var(--xxl);
       padding-right: 4rem;
+    }
+  }
+}
+
+@media screen and (min-width: 992px){
+  .card{
+    width: 25rem;
+    &__header{
+      p{
+        margin-top: var(--xs);
+      }
+    }
+    &__img{
+      width: rem(62px);
+    }
+    &__body{
+      h3{
+        padding-right: 8rem;
+        line-height: rem(31px);
+      }
+
+    }
+  }
+}
+@media screen and (min-width: 1200px){
+  .card{
+    width: 22rem;
+    transform: translateX(-30%);
+    &__body{
+      h3{
+        padding-right: 4rem;
+      }
     }
   }
 }

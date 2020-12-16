@@ -74,3 +74,37 @@ a{
     color: var(--text-footer);
   }
 }
+
+@media screen and (min-width: 992px){
+  .banner{
+    &__title{
+      font-size: rem(48px);
+    }
+    &__description{
+      font-size: rem(24px);
+    }
+    &__btn{
+      font-size: rem(18px);
+    }
+  }
+  .card{
+    &__info{
+      h5{
+        font-size: rem(14px);
+      }
+      p{
+        font-size: rem(12px);
+      }
+    }
+    &__body{
+      h3{
+        font-size: rem(24px);
+      }
+    }
+  }
+  .footer{
+    p{
+      border: none;
+    }
+  }
+}
