@@ -1,0 +1,35 @@
+.card{
+  position: relative;
+  top: rem(-50px);
+  width: 18rem;
+  left: 50%;
+  transform: translateX(-45%);
+  background: var(--bg);
+  padding: var(--md);
+  &__header{
+    display: flex;
+    align-items: center;
+  }
+  &__img{
+    border-radius: 50%;
+    width: rem(48px);
+    margin-right: var(--md);
+  }
+  &__info{
+    h5{
+      margin: 0;
+    }
+    p{
+      margin: 0;
+      padding-top: var(--xs);
+    }
+  }
+  &__body{
+    h3{
+      margin: 0;
+      padding-top: var(--md);
+      padding-bottom: var(--xxl);
+      padding-right: 4rem;
+    }
+  }
+}

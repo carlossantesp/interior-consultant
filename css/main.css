@@ -1,1 +1,237 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@400;700&family=Montserrat:wght@300;500;600;700&display=swap");
+:root {
+  --font-logo: 'Crimson Pro', serif;
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Lora', serif;
+  --font-style-logo: 200;
+  --font-light:300;
+  --font-semi: 400;
+  --font-normal: 500;
+  --font-semibold: 600;
+  --font-bold:700;
+  --size-base: 16px;
+  --bg:#181719;
+  --text: #FFFFFF;
+  --text-accent: #828282;
+  --text-footer: #A9A9A9;
+  --icons: #F2F2F2;
+  --xs:0.25rem;
+  --sm:0.5rem;
+  --md:1rem;
+  --lg:1.25rem;
+  --xl:1.5rem;
+  --xxl:2rem;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: var(--md);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu {
+  display: none;
+}
+
+.menu__icon {
+  width: 2rem;
+}
+
+.main {
+  margin: var(--md);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-area: "banner" "img";
+}
+
+.footer {
+  margin: var(--md);
+  text-align: center;
+}
+
+.footer p {
+  margin: 0 var(--lg);
+  padding-top: var(--sm);
+  border-top: 1px solid black;
+}
+
+.banner {
+  grid-column: banner;
+}
+
+.banner-img {
+  grid-column: img;
+}
+
+.banner {
+  margin: var(--lg) 0;
+}
+
+.banner__title {
+  margin: var(--sm) 0;
+}
+
+.banner__description {
+  padding-right: 10rem;
+}
+
+.banner__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: var(--xl) 0;
+}
+
+.banner__btn .icon {
+  margin-left: var(--sm);
+  width: 1rem;
+}
+
+.hero {
+  position: relative;
+  margin-bottom: -2.5rem;
+}
+
+.hero__img {
+  width: 100%;
+  display: block;
+}
+
+.card {
+  position: relative;
+  top: -3.125rem;
+  width: 18rem;
+  left: 50%;
+  -webkit-transform: translateX(-45%);
+          transform: translateX(-45%);
+  background: var(--bg);
+  padding: var(--md);
+}
+
+.card__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__img {
+  border-radius: 50%;
+  width: 3rem;
+  margin-right: var(--md);
+}
+
+.card__info h5 {
+  margin: 0;
+}
+
+.card__info p {
+  margin: 0;
+  padding-top: var(--xs);
+}
+
+.card__body h3 {
+  margin: 0;
+  padding-top: var(--md);
+  padding-bottom: var(--xxl);
+  padding-right: 4rem;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-normal);
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: var(--text);
+}
+
+.header__logo {
+  border: 1px solid var(--text);
+  padding: var(--sm);
+}
+
+.header__logo h1 {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: var(--font-style-logo);
+  font-family: var(--font-logo);
+  text-transform: uppercase;
+}
+
+.banner__title {
+  font-size: 2.25rem;
+  font-family: var(--font-secondary);
+  font-weight: var(--font-semi);
+}
+
+.banner__description {
+  font-size: 0.875rem;
+  font-weight: var(--font-light);
+}
+
+.banner__btn {
+  font-weight: var(--font-semibold);
+  font-size: 0.875rem;
+}
+
+.card__info h5 {
+  font-size: 0.75rem;
+}
+
+.card__info p {
+  font-size: 0.625rem;
+  color: var(--text-accent);
+}
+
+.card__body h3 {
+  font-size: 1.125rem;
+  font-family: var(--font-secondary);
+  font-weight: var(--font-bold);
+}
+
+.footer p {
+  border-color: var(--text-footer);
+  font-size: 0.875rem;
+  font-weight: var(--font-semibold);
+  color: var(--text-footer);
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,65 @@
+body{
+  font-family: var(--font-primary);
+  font-size: var(--font-normal);
+  background-color: var(--bg);
+  color: var(--text);
+}
+a{
+  color: var(--text);
+}
+
+.header{
+  &__logo{
+    border: 1px solid var(--text);
+    padding: var(--sm);
+    h1{
+      margin: 0;
+      font-size: rem(14px);
+      font-weight: var(--font-style-logo);
+      font-family: var(--font-logo);
+      text-transform: uppercase;
+    }
+  }
+}
+.banner{
+  &__title{
+    font-size: rem(36px);
+    font-family: var(--font-secondary);
+    font-weight: var(--font-semi);
+  }
+  &__description{
+    font-size: rem(14px);
+    font-weight: var(--font-light);
+  }
+  &__btn{
+    font-weight: var(--font-semibold);
+    font-size: rem(14px);
+  }
+}
+.card{
+  &__info{
+    h5{
+      font-size: rem(12px);
+    }
+    p{
+      font-size: rem(10px);
+      color: var(--text-accent);
+    }
+  }
+  &__body{
+    h3{
+      font-size: rem(18px);
+      font-family: var(--font-secondary);
+      font-weight: var(--font-bold);
+    }
+  }
+}
+
+.footer{
+  p{
+    border-color: var(--text-footer);
+    font-size: rem(14px);
+    font-weight: var(--font-semibold);
+    color: var(--text-footer);
+  }
+}

@@ -1,0 +1,31 @@
+body{
+  min-height: 100vh;
+}
+.header{
+  display: flex;
+  margin: var(--md);
+  justify-content: space-between;
+  align-items: center;
+}
+.menu{
+  display: none;
+  &__icon{
+    width: rem(32px);
+  }
+}
+.main{
+  margin: var(--md);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-area: "banner"
+              "img";
+}
+.footer{
+  margin: var(--md);
+  text-align: center;
+  p{
+    margin: 0 var(--lg);
+    padding-top: var(--sm);
+    border-top: 1px solid black;
+  }
+}

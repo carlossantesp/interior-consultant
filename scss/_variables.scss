@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@400;700&family=Montserrat:wght@300;500;600;700&display=swap');
+
+:root{
+  // Font Family
+  --font-logo: 'Crimson Pro', serif;
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Lora', serif;
+  // Styles
+  --font-style-logo: 200;
+  --font-light:300;
+  --font-semi: 400;
+  --font-normal: 500;
+  --font-semibold: 600;
+  --font-bold:700;
+  // Sizes
+  --size-base: 16px;
+  // Colors
+  --bg:#181719;
+  --text: #FFFFFF;
+  --text-accent: #828282;
+  --text-footer: #A9A9A9;
+  --icons: #F2F2F2;
+  // Margin and Padding
+  --xs:0.25rem;
+  --sm:0.5rem;
+  --md:1rem;
+  --lg:1.25rem;
+  --xl:1.5rem;
+  --xxl:2rem;
+}
+
+$html-font-size: 16px;

@@ -1,0 +1,24 @@
+.banner{
+  grid-column: banner;
+  &-img{
+    grid-column: img;
+  }
+}
+.banner{
+  margin: var(--lg) 0;
+  &__title{
+    margin: var(--sm) 0;
+  }
+  &__description{
+    padding-right: 10rem;
+  }
+  &__btn{
+    display: flex;
+    align-items: center;
+    margin: var(--xl) 0;
+    .icon{
+      margin-left: var(--sm);
+      width: rem(16px);
+    }
+  }
+}
